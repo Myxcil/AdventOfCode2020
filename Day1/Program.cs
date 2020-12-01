@@ -53,6 +53,9 @@ namespace Day1
                 for (int j = i + 1; j < values.Length - 1; ++j)
                 {
                     int second = values[j];
+                    if ((first + second) > 2020)
+                        continue;
+
                     for (int k = j + 1; k < values.Length; ++k)
                     {
                         int third = values[k];
