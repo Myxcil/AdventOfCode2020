@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
-using System.Collections.Generic;
 
 //----------------------------------------------------------------------------------------------------------------------------------------
 namespace Day1
@@ -12,7 +11,7 @@ namespace Day1
         //--------------------------------------------------------------------------------------------------------------------------------
         static void Main(string[] args)
         {
-            //RunPartOne();
+            RunPartOne();
             RunPartTwo();
         }
 
@@ -32,7 +31,7 @@ namespace Day1
                     int second = values[j];
                     if ((first + second) == 2020)
                     {
-                        Console.WriteLine("{0}", first * second);
+                        Console.WriteLine("#1: {0}", first * second);
                         return;
                     }
                 }
@@ -61,7 +60,7 @@ namespace Day1
                         int third = values[k];
                         if ((first+second+third) == 2020)
                         {
-                            Console.WriteLine("{0}", first * second * third);
+                            Console.WriteLine("#2: {0}", first * second * third);
                             return;
                         }
                     }
